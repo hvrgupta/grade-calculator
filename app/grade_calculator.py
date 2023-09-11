@@ -82,3 +82,23 @@ class GradeCalculator:
             return 'D'
         else:
             return 'F'
+        
+    @staticmethod
+    def calculate_minimum_average(grades:Grades, weights:GradeWeights,identifier:str) -> float:
+        # Calculate the Minimum average points for all yet ungraded assignments to get 'A' in the class
+        
+        if(grades.quiz_1 is None):
+            return grades.quiz_1
+        elif(identifier == 'quiz_2'):
+            return 0.0
+        elif(identifier == 'midterm'):
+            return 0.0
+        elif(identifier == 'project'):
+            return 0.0
+        elif(identifier == 'final'):
+            return 0.0
+        else:
+            pass
+
+
+    
